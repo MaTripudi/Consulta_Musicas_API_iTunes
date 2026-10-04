@@ -8,7 +8,7 @@ Uma aplicação web moderna e responsiva construída em **PHP**, **Bootstrap 5**
 
 | Tela de Busca | Resultados da Pesquisa |
 | :---: | :---: |
-| ![Tela de Busca](Tela1.png) | ![Resultados da Pesquisa](Tela2.jpg) |
+| ![Tela de Busca](Tela1.png) | ![Resultados da Pesquisa](Tela2.png) |
 
 ---
 
