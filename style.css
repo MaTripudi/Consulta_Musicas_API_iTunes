@@ -1,0 +1,175 @@
+body {
+    background-color: #012D5A;
+    color: #edeeef;
+}
+
+h1 {
+    color: #f91f55;
+}
+
+/* Sobrescreve o estilo do botão do Bootstrap */
+button,
+.btn-primary {
+    background-color: #f91f55 !important;
+    border-color: #f91f55 !important;
+    color: white !important;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Estado quando o mouse passa por cima (hover) */
+button:hover,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background-color: #d81445 !important;
+    border-color: #d81445 !important;
+    color: white !important;
+    box-shadow: 0 0 8px rgba(249, 31, 85, 0.6) !important;
+}
+
+input[type="text"] {
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #f91f55;
+    border-radius: 4px;
+    color: #012D5A;
+}
+
+/* Garante que o input mantenha a cor mesmo se o navegador focar */
+input[type="text"]:focus {
+    color: #012D5A;
+    border-color: #f91f55;
+    outline: none;
+    box-shadow: 0 0 5px rgba(249, 31, 85, 0.5);
+    caret-color: #f91f55;
+}
+
+audio {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 8px;
+    outline: none;
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: #012D5A; /* Fundo do player combinando com seu layout */
+    border: 1px solid #f91f55; /* Borda vermelha */
+}
+
+/* Cor dos ícones (Play, Pause, Mute) */
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-mute-button {
+    filter: invert(27%) sepia(91%) saturate(5432%) hue-rotate(336deg) brightness(97%) contrast(98%);
+    /* O filtro acima transforma a cor padrão do ícone no seu tom #f91f55 */
+}
+
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display {
+    color: #edeeef;
+}
+
+#rodape {
+    color: #edeeef;
+}
+
+/* Card de Músicas */
+.music-card {
+    background-color: #022040 !important; /* Tom azul escuro um pouco mais suave que o fundo */
+    border: 1px solid rgba(249, 31, 85, 0.2) !important;
+    border-radius: 12px !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.music-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4) !important;
+    border-color: #f91f55 !important;
+}
+
+.cover-img {
+    max-height: 220px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.music-info {
+    color: #b0c4de;
+}
+
+.card-title {
+    color: #ffffff;
+}
+
+.card-subtitle {
+    color: #f91f55 !important;
+}
+
+/* Player Customizado */
+.custom-player {
+    background-color: #011d3a;
+    border: 1px solid rgba(249, 31, 85, 0.3);
+}
+
+.btn-play {
+    background-color: #f91f55 !important;
+    color: #ffffff !important;
+    border: none !important;
+    outline: none !important;
+    
+    /* Remove estilos padrão do sistema/navegador */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    
+    /* Centraliza perfeitamente o texto do símbolo (▶) */
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    
+    font-size: 14px;
+    line-height: 1;
+    padding: 0 !important;
+    cursor: pointer;
+    transition: transform 0.1s ease, background-color 0.2s ease;
+    flex-shrink: 0;
+}
+
+.btn-play:hover {
+    background-color: #d81445 !important;
+    transform: scale(1.05);
+}
+
+/* Customização da Barra de Progresso Range */
+.progress-bar-custom::-webkit-slider-thumb {
+    background-color: #f91f55 !important;
+}
+
+/* Cor do círculo no Firefox */
+.progress-bar-custom::-moz-range-thumb {
+    background-color: #f91f55 !important;
+    border: none;
+}
+
+/* Alertas Customizados */
+.alert-warning-custom {
+    background-color: #022040;
+    color: #edeeef;
+    border: 1px solid #f91f55;
+}
+
+.alert-danger-custom {
+    background-color: #3d0a16;
+    color: #ffb3c1;
+    border: 1px solid #f91f55;
+}
